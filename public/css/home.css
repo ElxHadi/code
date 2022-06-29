@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+
+html,
+body,
+.wrapper {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+:root {
+  --body: #fff;
+  --text: #363636;
+  --text-light: #898989;
+  --primary: #1bbeff;
+  --border: #bbbbbb;
+  --padding: 16px 24px;
+  --line-height: 24px;
+  --hover-text: #5264AE;
+}
+
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--body);
+}
+
+#logo{
+
+  
+  font-family: lora , serif;
+  font-size: 59px;
+}
+
+
+h3 {
+  all: initial;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.nav {
+
+  right: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding: 1rem;
+  background: #f8f8f8;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .select {
+  position: relative;
+}
+
+.nav .select a {
+  padding: 8px 16px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, .05);
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+  transition: all 0.25s;
+}
+
+.nav .select a:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f078";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #1e0e62;
+}
+.nav .select .dropdown-menu a,.nav .select .dropdown-menu a::before ,.nav .select .dropdown-menu a::after{
+
+  all: initial;
+  color: black;
+  font-family: var(--bs-font-sans-serif);
+  font-weight: 600;
+
+}
+.nav .select .dropdown-menu a:hover{
+  cursor: pointer;
+}
+
+
+.nav .select .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 1);
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) -3px 3px 6px, rgba(0, 0, 0, 0.055) -20px 20px 55px, rgba(255, 255, 255, 0.6) -2px 2px 2px 1px inset, rgba(255, 255, 255, 0.4) 2px 2px 3px 0px inset, rgba(0, 0, 0, 0.05) 1px 1px 2px 0px inset;
+  display: none;
+  transition: 0.25s opacity;
+}
+
+.nav .select .dropdown-menu.active {
+  display: block;
+}
+
+.nav .select .dropdown-menu div {
+  margin-bottom: 1em;
+  font-weight: 600;
+  color: #1e0e62;
+  cursor: pointer;
+  padding: 16px;
+  border-bottom: 2px solid #1e0e62 69;
+}
+
+
+.footer {
+
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  padding: 0.1rem;
+  background: #f8f8f8;
+  justify-content: center;
+  align-items: center;
+  gap: 60%;
+  margin-top: 40px;
+}
+
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dropdown-toggle::after{
+display: none;
+}
+
+#greetings{
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+
+}
+
+#userEmail{
+  color: #e1b12c;
+}

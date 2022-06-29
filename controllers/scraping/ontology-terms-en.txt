@@ -1,0 +1,231 @@
+algorithm
+sorting algorithm
+searching algorithm
+optimize
+optimization algorithm
+data collection
+data structure
+abstract data structure
+traversal
+node
+distance
+edge
+weighted graph 
+oriented graph
+non oriented graph
+vertices
+graph
+dictionary
+tuple
+list
+linear list
+linked list
+doubly linked list
+queue
+set
+stack
+tree
+binary tree
+binary search tree
+linear search
+arity
+n-arity tree
+static structure
+dynamic structure
+operation
+operations
+deletion
+initialisation
+insertion
+dichotomic search
+simple search
+sort
+bubble sort
+sort by insertion
+sort by selection
+basic notions
+data
+data memory
+constant
+alphanumeric
+integer
+real
+parameter
+input parameter
+output parameter
+variable
+logical variable
+values
+comparison
+expression
+arithmetic expression
+arithmetic binary expression
+arithmetic unary expression
+logical expression
+logical unary expression
+logical binary expression
+relational alpahnumeric expression
+relational integer expression
+relational real expression
+relational logical expression
+evaluation
+order of evaluation
+expression evaluation
+clause
+scope
+out of scope
+local scope
+global scope
+identifier
+operands
+operator
+binary operator
+unary operator
+arithmetic operator
+logical operator
+integer operator
+real operator
+relational operator
+program
+sub program
+method
+sub program with returned value
+sub program without returned value
+declared method
+iteratition
+iterative method 
+recursive method
+predefined method
+statement
+compound statement
+simple statement
+data flow
+control flow statement
+alternative statement
+loop
+loop statement
+while statement
+for statement
+branching
+if else statement
+if statement
+selection statement
+condition controlled loop
+counter controlled loop
+sequence
+assignement
+alphanumeric assignement
+integer assignement
+logical assignement
+real assignement
+increment
+incrementation
+decrement
+decrementation
+call statement
+local variable
+global variable
+recursivity
+recursive call
+declaration statement
+constant declaration
+data structure declaration
+variable declaration
+input statement
+output statement
+return statement
+type
+composite data type
+array
+one dimension array
+two dimension array
+2D array
+file
+record
+primitive data type
+alphanumeric type
+char type
+string
+string type
+enumerated type
+logical type
+numeric type
+integer type
+real type
+pointer
+dereference
+pointer dereference
+reference
+pass by value
+shalow copy
+pass by reference
+deep copy
+memory
+stack overflow
+memory overflow
+memory leak
+memory adresse
+offset
+byte
+bit
+binary
+scalar type
+algorithms
+programming language
+dynamic memory allocation
+object
+classe
+instance
+classe instance
+abstract classe
+attribute
+classe attribute
+classe method
+void
+null
+nill
+best case
+worst case
+average case
+complexity
+time complexity
+space complexity
+polynomial time
+polynomial complexity
+exponential
+factorial
+quadratic 
+cubic
+logarithmic
+linear
+linear time
+constant time
+memory safety
+code
+hard code
+literal
+return type
+function
+function call
+switch statement
+break
+semicolone
+keyword
+reserved keywords
+error
+logical error
+syntaxic error
+unkonw error
+try catch 
+try catch statement
+try block
+nested
+nested if else
+nested function
+function signature
+argument
+function argument
+function declaration
+template
+programming
+

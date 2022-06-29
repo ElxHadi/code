@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statistics</title>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="/css/statistics.css" />
+    <script src="/js/statistics.js"></script>
+  </head>
+  <body>
+    <div class="flex-wrapper"><div class="content">
+        <nav class="nav">
+          <div class="select">
+            <a
+              href="#"
+              class="link color-main dropdown-toggle"
+              id="navigation_2_dropdown_1"
+              >Go to</a
+            >
+            <div class="dropdown-menu">
+              <div><a href="/">Home 🏠</a></div>
+              <%if(user.role == "teacher"){%>
+                <div><a href="/analyse">Analyse 🔎</a></div>
+                <%}else{%>
+                <div><a href="/search">Search 📙</a></div>
+                <%}%>
+              <div><a href="/logout">Logout 🚪</a></div>
+             
+            </div>
+          </div>
+          <div id="greetings">
+            <h3>
+              Hey
+              <h3 id="userEmail"><%=user.email%></h2>
+              <h3>, these are our tool's statistics 📈...</h3>
+            </h3>
+          </div>
+          <div class="logo">
+            <h2 style="text-align: center">DataScrap</h2>
+          </div>
+        </nav>
+
+        <div class="wrapper">
+          <section class="columns">
+            <div class="column">
+              <h2>Interactivity Type 🐢</h2>
+              <p>
+                The pie chart <b class="trigger">below</b> gives information
+                about the <i>type of interactivity</i> of the analysed
+                documents.
+              </p>
+              <div
+                class="chart-container not-show"
+                style="position: relative; height: 100%; width: 100%"
+              >
+                <canvas
+                  id="InteractivityTypeChart"
+                  width="200"
+                  height="200"
+                  aria-label="Hello ARIA World"
+                  role="img"
+                ></canvas>
+              </div>
+            </div>
+
+            <div class="column">
+              <h2>Interactivity Levels 🌡️</h2>
+              <p>
+                The bar chart <b class="trigger">below</b> gives information
+                about the <i>levels of interactivity</i> of the analysed
+                documents .<br /><br />
+              </p>
+              <div
+                class="chart-container not-show"
+                style="position: relative; height: 100%; width: 100%"
+              >
+                <canvas
+                  id="InteractivityLevelChart"
+                  width="200"
+                  height="200"
+                  aria-label="Hello ARIA World"
+                  role="img"
+                ></canvas>
+              </div>
+            </div>
+
+            <div class="column">
+              <h2>Semantic Density ⚖️</h2>
+              <p>
+                The bar chart <b class="trigger">below</b> gives information
+                about the levels of <i>semantic density</i> of the analysed
+                documents .<br /><br />
+              </p>
+              <div
+                class="chart-container not-show"
+                style="position: relative; height: 100%; width: 100%"
+              >
+                <canvas
+                  id="semanticDensityChart"
+                  width="200"
+                  height="200"
+                  aria-label="Hello ARIA World"
+                  role="img"
+                ></canvas>
+              </div>
+            </div>
+          </section>
+
+          <section class="columns">
+            <div class="column">
+              <h2>Text Richness ✍️</h2>
+              <p>
+                The bar chart <b class="trigger">below</b> gives information
+                about the levels of <i>text richness</i> of the analysed
+                documents .<br /><br />
+              </p>
+              <div
+                class="chart-container not-show"
+                style="position: relative; height: 100%; width: 100%"
+              >
+                <canvas
+                  id="textRichnessChart"
+                  width="200"
+                  height="200"
+                  aria-label="Hello ARIA World"
+                  role="img"
+                ></canvas>
+              </div>
+            </div>
+
+            <div class="column">
+              <h2>Text Readability 📖</h2>
+              <p>
+                The bar chart <b class="trigger">below</b> gives information
+                about the levels of <i>readability</i> of the analysed documents
+                .<br /><br />
+              </p>
+              <div
+                class="chart-container not-show"
+                style="position: relative; height: 100%; width: 100%"
+              >
+                <canvas
+                  id="textReadabilityChart"
+                  width="200"
+                  height="200"
+                  aria-label="Hello ARIA World"
+                  role="img"
+                ></canvas>
+              </div>
+            </div>
+          </section>
+
+          <section class="columns">
+            <div class="column">
+              <h2>Reading Time ⏱️</h2>
+              <p>
+                The line chart <b class="trigger">below</b> gives information
+                about the <i>reading time</i> of the analysed documents.<br /><br />
+              </p>
+              <div
+                class="chart-container not-show"
+                style="position: relative; height: 100%; width: 100%"
+              >
+                <canvas
+                  id="readingTimeChart"
+                  width="200"
+                  height="200"
+                  aria-label="Hello ARIA World"
+                  role="img"
+                ></canvas>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div><p>© 2022</p></div>
+        <div>
+          <p>Made by <b>ElxHadi</b> and <b>marwadengou</b></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataScrap</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/analyse.css" />
+
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script defer src="/js/analyse.js"></script>
+  </head>
+
+  <body>
+    <div class="flex-wrapper">
+      <div class="content">
+        <nav class="nav">
+          <div class="select">
+            <a
+              href="#"
+              class="link color-main dropdown-toggle"
+              id="navigation_2_dropdown_1"
+              >Go to</a
+            >
+            <div class="dropdown-menu">
+              <div><a href="/">Home 🏠</a></div>
+              <div><a href="/statistics">Statistics 📈</a></div>
+              <div><a href="/logout">Logout 🚪</a></div>
+            </div>
+          </div>
+          <div id="greetings">
+            <h3>
+              Hey
+              <h3 id="userEmail"><%=user.email%></h3><p id="userId"style="display: none"><%=user.id%></p>
+              <h3>, Are you looking to...</h3>
+              <p id="userId" style="display: none"><%=user.id%></p>
+            </h3>
+          </div>
+          <div class="logo">
+            <h2 style="text-align: center">DataScrap</h2>
+          </div>
+        </nav>
+
+        <main>
+          <section class="columns">
+            <div class="column analyse">
+              <h2>Analyse a new resource ?</h2>
+              <p>
+                It can be easily done, just type it's link down below &nbsp
+                <i class="fa-solid fa-arrow-down fa-lg"></i>
+              </p>
+
+              <div class="input-group hide-dont-keep">
+                <input type="text" name="" id="link-source" placeholder=" " />
+                <label id="link-source-label" for="link-source">Link</label>
+              </div>
+            </div>
+
+            <div class="column hide-but-keep">
+              <h2>You wont see me</h2>
+            </div>
+
+            <div class="column check">
+              <h2>Check for an existing resource ?</h2>
+              <p>
+                Try to look it up here &nbsp
+                <i class="fa-solid fa-arrow-down fa-lg"></i>
+              </p>
+              <div class="lookUp hide-dont-keep">
+                <select name="resource" class="resource">
+                  <option selected></option>
+                </select>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <div class="footer">
+        <div><p>© 2022</p></div>
+        <div>
+          <p>Made by <b>ElxHadi</b> and <b>marwadengou</b></p>
+        </div>
+      </div>
+
+    </div>
+
+    
+
+  </body>
+</html>

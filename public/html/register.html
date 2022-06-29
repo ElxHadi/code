@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="../js/register.js"></script>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Register page</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="container my-5">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <h5 class="card-title">Register form</h5>
+                <form onsubmit="return false;" id="form">
+                    <div class="mb-3">
+                    <label for="email class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" autocomplete="off" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" autocomplete="off" required>
+                    </div>
+
+                    <div class="input-group mb-3">
+                      <label for="role">Select your role</label>
+                        <select class="custom-select" id="role" style="margin-left: 20px">
+                          <option selected>You are...</option>
+                          <option value="1">Teacher</option>
+                          <option value="2">Student</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group mb-3 gradeSelect" style="display: none ;">
+                      <label for="grade">Select your grade</label>
+                        <select class="custom-select" id="grade">
+                          <option selected>You are...</option>
+                          <option value="1">Proffesor degree</option>
+                          <option value="2">PHD</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group mb-3 studyLevelSelect" style="display: none ;">
+                      <label for="studyLevel">Select your study levels</label>
+                        <select class="custom-select" id="studyLevel">
+                          <option selected>You are...</option>
+                          <option value="1">Currently doing PHD</option>
+                          <option value="2">Have a Master's degree</option>
+                          <option value="2">Have a bachelor's degree</option>
+                          <option value="2">None of the above...</option>
+                        </select>
+                    </div>
+
+                    <div class="alert alert-danger" role="alert" id="error" style="display: none"></div>
+                    <div class="alert alert-success" role="alert" id="success" style="display: none"></div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+
+                </form>
+          </div>
+        </div>
+
+</div>
+
+</body>
+</html>
